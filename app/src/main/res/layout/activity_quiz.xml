@@ -21,21 +21,48 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="10dp"
-        android:background="#00f">
+        android:padding="10dp">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#0f0">
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/esquerda"
+                android:id="@+id/ivEsquerda"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NÃO"
+                android:textSize="40dp"/>
+
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#ff0">
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/direita"
+                android:id="@+id/ivDireita"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIM"
+                android:textSize="40dp"/>
         </LinearLayout>
 
     </LinearLayout>
